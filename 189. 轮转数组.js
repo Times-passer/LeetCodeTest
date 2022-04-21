@@ -57,12 +57,14 @@ const reverse = (nums, l, r) => {
 };
  */
 
-// 2. API：.splice() 方法：从索引号0开始删除0个，添加...
+/* 
+// 2. API：.splice() 方法：从索引号0开始删除0个，添加... 
 // 该方法返回被删掉元素的数组
 var rotate = function (nums, k) {
   nums.splice(0, 0, ...nums.splice(-(k %= nums.length), k));
   return nums;
 };
+ */
 
 /* 
 // 3. 辅助数组：新建一个数组，然后按顺序覆盖原数组 (i + k) % length 上的值
