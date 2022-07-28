@@ -1,4 +1,4 @@
-// 测试冲突
+// sb冲突
 /* 方法一：暴力枚举
 时间复杂度：O(N^2)，其中 N 是数组中的元素数量。最坏情况下数组中任意两个数都要被匹配一次。
 
@@ -24,15 +24,15 @@ var twoSum = function (nums, target) {
 链接：https://leetcode.cn/problems/two-sum/solution/tu-jie-guan-fang-tui-jian-ti-jie-liang-s-02xs/ */
 
 var twoSum = function (nums, target) {
-  map = new Map();
+  map = new Map()
   for (let i = 0; i < nums.length; i++) {
-    let key = target - nums[i];
+    let key = target - nums[i]
     if (map.has(key)) {
-      return new Array(map.get(key), i);
+      return new Array(map.get(key), i)
     } else {
-      map.set(nums[i], i);
+      map.set(nums[i], i)
     }
   }
-};
+}
 
 // console.log(twoSum([2, 7, 11, 15], 9));
